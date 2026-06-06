@@ -11,7 +11,7 @@ export abstract class Funcionario extends Fisica {
   protected setor: SetorFuncionario;
   protected salario: number;
 
-  constructor(nome: string, telefone: string, email: string, endereco: Endereco, genero: Genero, estadoCivil: EstadoCivil, dataNascimento: Date, cpf: string, rg: string, matricula: string, setor: Setor, salario: number) {
+  constructor(nome: string, telefone: string, email: string, endereco: Endereco, genero: Genero, estadoCivil: EstadoCivil, dataNascimento: Date, cpf: string, rg: string, matricula: string, setor: SetorFuncionario, salario: number) {
     super(nome, telefone, email, endereco, genero, estadoCivil, dataNascimento);
     this.cpf = cpf;
     this.rg = rg;
